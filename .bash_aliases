@@ -9,3 +9,7 @@ ffmpegdownload() {
     ffmpeg -i "$1" -c copy "$2"
 }
 
+blubber() {
+    curl -s --data-binary "@$1" http://tools.wmflabs.org/blubber/test
+}
+
