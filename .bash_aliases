@@ -10,6 +10,6 @@ ffmpegdownload() {
 }
 
 blubber() {
-    curl -s --data-binary "@$1" http://tools.wmflabs.org/blubber/test
+    curl -s --data-binary "@$1" "https://tools.wmflabs.org/blubber/$2"
 }
 
