@@ -13,3 +13,9 @@ blubber() {
     curl -s --data-binary "@$1" "https://tools.wmflabs.org/blubber/$2"
 }
 
+pdfmerge() {
+    NEWPDF=`mktemp --suffix=.pdf`
+    gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile=$NEWPDF "$@"
+    echo "Find your merged PDF at $NEWPDF"
+}
+
