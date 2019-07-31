@@ -10,7 +10,7 @@ ffmpegdownload() {
 }
 
 blubber() {
-    curl -s --data-binary "@$1" "https://tools.wmflabs.org/blubber/$2"
+    curl -s -H "Content-Type: application/yaml" --data-binary "@$1" "https://blubberoid.wikimedia.org/v1/$2"
 }
 
 pdfmerge() {
