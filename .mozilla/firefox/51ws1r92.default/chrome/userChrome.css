@@ -1,0 +1,10 @@
+/**
+ * In order for userChrome.css to work, you need to open `about:config` and change
+ * `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+ */
+
+#urlbar,
+#statuspanel[type="overLink"] {
+	font-family: "Source Code Pro", monospace;
+}
+
